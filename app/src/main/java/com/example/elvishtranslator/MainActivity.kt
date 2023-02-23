@@ -24,24 +24,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
         findViewById<TextView>(R.id.textView3).setOnClickListener {
-            var i = Intent(this, numeros::class.java)
+            var i = Intent(this, Colores::class.java)
             startActivity(i)
         }
-        findViewById<TextView>(R.id.textView4){
-
-        }
-    }
-
-    fun changeView(vista: View) {
-        if (vista.id == R.id.textView) {
-        } else if (vista.id == R.id.textView2) {
-            var i = Intent(this, familia::class.java)
-            startActivity(i)
-        } else if (vista.id == R.id.textView3) {
-            var i = Intent(this, colores::class.java)
-            startActivity(i)
-        } else if (vista.id == R.id.textView4) {
-            var i = Intent(this, numeros::class.java)
+        findViewById<TextView>(R.id.textView4).setOnClickListener {
+            var i = Intent(this, frases::class.java)
             startActivity(i)
         }
     }
