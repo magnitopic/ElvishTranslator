@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.elvishtranslator"
-        minSdk 24
+        minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"

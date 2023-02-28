@@ -7,9 +7,9 @@
     android:orientation="vertical"
     tools:context=".Colores">
 
-    <TextView
-        android:id="@+id/textView7"
+    <ListView
+        android:id="@+id/lista_colores"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Colores" />
+        android:layout_height="match_parent" />
+
 </LinearLayout>
