@@ -12,17 +12,22 @@ class Colores : AppCompatActivity() {
         val listaColores = findViewById<ListView>(R.id.lista_colores)
 
         var colores = arrayListOf<Word>(
-            Word("Rojo", "Turpis"),
-            Word("Azul","Turpis"),
-            Word("Verede","Turpis"),
-            Word("Marrón","Turpis"),
-            Word("Fuxia","Turpis"),
-            Word("Morado","Turpis"),
-            Word("Granate","Turpis"),
-            Word("Amarillo","Turpis"),
-            Word("Rosa","Turpis"),
-            Word("Beige","Turpis")
+            Word("Rojo" ,"Caran"),
+            Word("Carmín" ,"Carnin"),
+            Word("Azul" ,"Luin"),
+            Word("Azul Marino" ,"Elu"),
+            Word("Amarillo" ,"Malen"),
+            Word("Verde" ,"Calen"),
+            Word("Negro" ,"Morn"),
+            Word("Marrón oscuro" ,"Baran"),
+            Word("Marrón" ,"Rhosg"),
+            Word("Blanco" ,"Faen"),
+            Word("Pálido" ,"Nimp"),
+            Word("Gris" ,"Mith"),
+            Word("Naranja" ,"Cull"),
+            Word("Rosa" ,"Crinth"),
+            Word("Violeta" ,"Ling")
         )
-        listaColores.adapter = ArrayAdapter<Word>(applicationContext, android.R.layout.simple_list_item_1, colores)
+        listaColores.adapter = WordArrayAdapter(applicationContext, R.layout.item_list_word, colores)
     }
 }

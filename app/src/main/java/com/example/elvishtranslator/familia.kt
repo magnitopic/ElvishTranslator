@@ -11,18 +11,18 @@ class familia : AppCompatActivity() {
         setContentView(R.layout.activity_familia)
 
         val listaFamilia = findViewById<ListView>(R.id.listaFamilia)
-        var familiares= arrayListOf<String>(
-            "Mama",
-            "Papa",
-            "Hermano",
-            "Hermana",
-            "Abuelo",
-            "Abuela",
-            "Prima",
-            "Primo",
-            "Tia",
-            "Tio"
+        var familiares= arrayListOf<Word>(
+            Word("Madre", "Naneth"),
+            Word("Padre", "Adanadar"),
+            Word("Hijo", "Ionn"),
+            Word("Hija", "Sell"),
+            Word("Muindor", "Hermano"),
+            Word("Muinthel", "Hermana"),
+            Word("Tío", "Athelas"),
+            Word("Tía", "Nethwen"),
+            Word("Abuelo", "Adaid"),
+            Word("Abuela", "Nanaid")
         )
-        listaFamilia.adapter = ArrayAdapter<String>(applicationContext, android.R.layout.simple_list_item_1, familiares)
+        listaFamilia.adapter = WordArrayAdapter(applicationContext, R.layout.item_list_word, familiares)
     }
 }
