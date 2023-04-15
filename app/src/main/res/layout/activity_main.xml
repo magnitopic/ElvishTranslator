@@ -4,34 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8FBC8F"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="changeView"
-        android:text="Numeros" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="changeView"
-        android:text="Familia" />
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:background="#FFFFF0"
+        android:gravity="center"
+        android:text="🇪🇸 ⎮ 🔮\n\nTraductor Elfico"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="changeView"
-        android:text="Colores" />
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight=".75"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="changeView"
-        android:text="Frases" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <TextView
+            android:id="@+id/coloursButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/pill"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="🎨 Colores"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <TextView
+            android:id="@+id/numbersButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/coloursButton"
+            android:layout_weight="1"
+            android:background="@drawable/pill"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="🔢 Numeros"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <TextView
+            android:id="@+id/familyButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/numbersButton"
+            android:layout_weight="1"
+            android:background="@drawable/pill"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="👨‍👩‍👧‍👧 Familia"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <TextView
+            android:id="@+id/phrasesButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/familyButton"
+            android:layout_weight="1"
+            android:background="@drawable/pill"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="💬 Frases"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+    </LinearLayout>
+
 </LinearLayout>
