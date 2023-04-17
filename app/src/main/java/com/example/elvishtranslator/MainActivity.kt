@@ -1,6 +1,7 @@
 package com.example.elvishtranslator
 
 import android.content.Intent
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,6 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupListeners()
+        val face: Typeface = Typeface.createFromAsset(assets, "fonts/RichardSamuels.otf")
+        val mainTitle: TextView = findViewById(R.id.mainTitle)
+        mainTitle.typeface = face
+        findViewById<TextView>(R.id.numbersButton).typeface = face
+        findViewById<TextView>(R.id.familyButton).typeface = face
+        findViewById<TextView>(R.id.coloursButton).typeface = face
+        findViewById<TextView>(R.id.phrasesButton).typeface = face
     }
 
     fun setupListeners() {
