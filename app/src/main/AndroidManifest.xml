@@ -15,15 +15,19 @@
         tools:targetApi="31">
         <activity
             android:name=".frases"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Colores"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".familia"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".numeros"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

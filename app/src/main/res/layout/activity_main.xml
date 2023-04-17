@@ -59,7 +59,7 @@
             android:background="@drawable/pill"
             android:gravity="center"
             android:padding="5dp"
-            android:text="🔢 Numeros"
+            android:text="🔢 Números"
             android:textColor="@color/black"
             android:textSize="30sp" />
 
