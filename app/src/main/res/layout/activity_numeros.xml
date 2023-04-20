@@ -11,6 +11,7 @@
         android:id="@+id/relativeTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#8FBC8F"
         android:orientation="horizontal">
 
         <TextView
@@ -21,7 +22,14 @@
             android:padding="10dp"
             android:text="🇪🇸 Español"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
 
         <TextView
             android:id="@+id/textViewElvish"
@@ -31,11 +39,13 @@
             android:padding="10dp"
             android:text="🔮 Elfico"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textColor="@color/black"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <ListView
         android:id="@+id/listaNumeros"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#FFEFD5" />
 </LinearLayout>

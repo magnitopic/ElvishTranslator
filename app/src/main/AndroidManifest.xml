@@ -16,17 +16,21 @@
         <activity
             android:name=".frases"
             android:parentActivityName=".MainActivity"
+            android:label="Frases"
             android:exported="false" />
         <activity
             android:name=".Colores"
+            android:label="Colores"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".familia"
+            android:label="Familia"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".numeros"
+            android:label="Numeros"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity

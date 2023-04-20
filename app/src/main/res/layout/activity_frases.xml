@@ -11,6 +11,7 @@
         android:id="@+id/relativeTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#8FBC8F"
         android:orientation="horizontal">
 
         <TextView
@@ -19,23 +20,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="🇪🇸 Español"
-            android:textAlignment="center"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/textViewElvish"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
             android:text="🔮 Elfico"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textColor="@color/black"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <ListView
         android:id="@+id/listaFrases"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#FFEFD5" />
 </LinearLayout>

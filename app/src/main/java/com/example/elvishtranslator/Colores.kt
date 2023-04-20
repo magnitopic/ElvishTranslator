@@ -12,21 +12,21 @@ class Colores : AppCompatActivity() {
         val listaColores = findViewById<ListView>(R.id.lista_colores)
 
         var colores = arrayListOf<Word>(
-            Word("Rojo" ,"Caran"),
-            Word("Carmín" ,"Carnin"),
-            Word("Azul" ,"Luin"),
-            Word("Azul Marino" ,"Elu"),
-            Word("Amarillo" ,"Malen"),
-            Word("Verde" ,"Calen"),
-            Word("Negro" ,"Morn"),
-            Word("Marrón oscuro" ,"Baran"),
-            Word("Marrón" ,"Rhosg"),
-            Word("Blanco" ,"Faen"),
-            Word("Pálido" ,"Nimp"),
-            Word("Gris" ,"Mith"),
-            Word("Naranja" ,"Cull"),
-            Word("Rosa" ,"Crinth"),
-            Word("Violeta" ,"Ling")
+            Word("Rojo" ,"Caran", R.raw.rojo),
+            Word("Carmín" ,"Carnin", R.raw.carmin),
+            Word("Azul" ,"Luin", R.raw.azul),
+            Word("Azul Marino" ,"Elu", R.raw.azul_marino),
+            Word("Amarillo" ,"Malen", R.raw.amarillo),
+            Word("Verde" ,"Calen", R.raw.amarillo),
+            Word("Negro" ,"Morn", R.raw.amarillo),
+            Word("Marrón oscuro" ,"Baran", R.raw.amarillo),
+            Word("Marrón" ,"Rhosg", R.raw.amarillo),
+            Word("Blanco" ,"Faen", R.raw.amarillo),
+            Word("Pálido" ,"Nimp", R.raw.amarillo),
+            Word("Gris" ,"Mith", R.raw.amarillo),
+            Word("Naranja" ,"Cull", R.raw.amarillo),
+            Word("Rosa" ,"Crinth", R.raw.amarillo),
+            Word("Violeta" ,"Ling", R.raw.amarillo)
         )
         listaColores.adapter = WordArrayAdapter(applicationContext, R.layout.item_list_word, colores)
     }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewSpanish"
+        android:layout_width="wrap_content"
+        android:layout_weight=".4"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/playIcon"
+        android:padding="10dp"
+        android:text="PalceholderSpanish"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/playIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/play" />
+
+</RelativeLayout>

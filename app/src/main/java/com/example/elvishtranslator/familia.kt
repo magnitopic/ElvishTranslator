@@ -12,16 +12,16 @@ class familia : AppCompatActivity() {
 
         val listaFamilia = findViewById<ListView>(R.id.listaFamilia)
         var familiares= arrayListOf<Word>(
-            Word("Madre", "Naneth"),
-            Word("Padre", "Adanadar"),
-            Word("Hijo", "Ionn"),
-            Word("Hija", "Sell"),
-            Word("Hermano", "Muindor"),
-            Word("Hermana", "Muinthel"),
-            Word("Tío", "Athelas"),
-            Word("Tía", "Nethwen"),
-            Word("Abuelo", "Adaid"),
-            Word("Abuela", "Nanaid")
+            Word("Madre", "Naneth", R.raw.madre),
+            Word("Padre", "Adanadar", R.raw.padre),
+            Word("Hijo", "Ionn", R.raw.hijo),
+            Word("Hija", "Sell", R.raw.hija),
+            Word("Hermano", "Muindor", R.raw.hermano),
+            Word("Hermana", "Muinthel", R.raw.hermano),
+            Word("Tío", "Athelas", R.raw.hermano),
+            Word("Tía", "Nethwen", R.raw.hermano),
+            Word("Abuelo", "Adaid", R.raw.hermano),
+            Word("Abuela", "Nanaid", R.raw.hermano)
         )
         listaFamilia.adapter = WordArrayAdapter(applicationContext, R.layout.item_list_word, familiares)
     }

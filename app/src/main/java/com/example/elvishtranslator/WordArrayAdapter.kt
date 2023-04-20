@@ -17,7 +17,7 @@ class WordArrayAdapter(context: Context, viewToPaint: Int, private val wordList:
         val inflater = LayoutInflater.from(context)
         val currentListItem = inflater.inflate(R.layout.item_list_word, null)
         val playAudioButton = currentListItem.findViewById<ImageView>(R.id.playIcon)
-        val mediaPlayer = MediaPlayer.create(applicationContext, R.raw.my_audio_file)
+        val mediaPlayer = MediaPlayer.create(context, wordList.get(position).audio)
 
 
         val spanishText = currentListItem.findViewById<TextView>(R.id.textViewSpanish)
@@ -28,7 +28,7 @@ class WordArrayAdapter(context: Context, viewToPaint: Int, private val wordList:
         playAudioButton.setImageResource(R.drawable.play)
 
         currentListItem.setOnClickListener {
-            Log.d("TAG", "Lista presionada")
+            mediaPlayer?.start()
         }
 
         return currentListItem
